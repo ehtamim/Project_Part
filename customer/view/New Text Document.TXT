@@ -1,0 +1,25 @@
+<?php
+session_start(); 
+if(empty($_SESSION["username"])) 
+{
+header("Location:login.php"); 
+}
+else
+{
+    $wel=$_SESSION["username"];
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/mycss.css">
+</head>
+<body>
+
+<h2> This is booking page, <?php echo $wel; ?> </h2>
+<br>
+<br>
+<a href="customer.php"> <input name="home" type="submit" id="click" value="HOME PAGE"> </a>
+</div>
+</body>
+</html>
