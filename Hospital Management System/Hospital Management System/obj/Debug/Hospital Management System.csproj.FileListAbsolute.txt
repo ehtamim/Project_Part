@@ -1,0 +1,12 @@
+H:\OOP2\Hospital Management System\Hospital Management System\bin\Debug\Hospital Management System.exe.config
+H:\OOP2\Hospital Management System\Hospital Management System\bin\Debug\Hospital Management System.exe
+H:\OOP2\Hospital Management System\Hospital Management System\bin\Debug\Hospital Management System.pdb
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital Management System.csproj.AssemblyReference.cache
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital_Management_System.Form1.resources
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital_Management_System.Properties.Resources.resources
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital Management System.csproj.GenerateResource.cache
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital Management System.exe
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital Management System.pdb
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital_Management_System.Form2.resources
+H:\OOP2\Hospital Management System\Hospital Management System\obj\Debug\Hospital_Management_System.Form3.resources
