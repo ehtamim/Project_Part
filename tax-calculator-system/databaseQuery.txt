@@ -1,0 +1,73 @@
+create table authority
+(
+    id   bigint auto_increment
+        primary key,
+    name varchar(50) null
+);
+
+create table tax_calculated
+(
+    id               bigint auto_increment
+        primary key,
+    user_id          bigint       not null,
+    date             varchar(100) not null,
+    basicSalary      double       not null,
+    houseRent        double       null,
+    medicalAllowance double       null,
+    conveyance       double       null,
+    festivalBonus    double       null,
+    taxAbleIncome    double       null,
+    taxLiability     double       null,
+    rebate           double       null,
+    netTax           double       null
+);
+
+create table taxvariables
+(
+    id                bigint auto_increment
+        primary key,
+    house_rent        double not null,
+    medical_allowance double not null,
+    conveyance        double not null,
+    festive_bonus     double not null,
+    male_payable      double not null,
+    female_payable    double not null,
+    disabled_payable  double not null,
+    freedom_payable   double not null,
+    next1             double not null,
+    next3             double not null,
+    next4             double not null,
+    next5             double not null,
+    rest              double not null
+);
+
+create table user
+(
+    id             bigint auto_increment
+        primary key,
+    name           varchar(200)      not null,
+    username       varchar(100)      not null,
+    gender         varchar(10)       null,
+    age            int               null,
+    email          varchar(100)      not null,
+    contact        varchar(14)       not null,
+    password       varchar(100)      null,
+    disabled       tinyint default 0 null,
+    freedomfighter tinyint default 0 null,
+    senior         tinyint           not null,
+    constraint username
+        unique (username)
+);
+
+create table user_authority_map
+(
+    id           bigint auto_increment
+        primary key,
+    user_id      bigint null,
+    authority_id bigint null,
+    constraint user_authority_map_authority_id_fk
+        foreign key (authority_id) references authority (id),
+    constraint user_authority_map_user_id_fk
+        foreign key (user_id) references user (id)
+);
+
